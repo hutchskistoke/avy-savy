@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Name
 
-## Available Scripts
+Avy Savy
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+Avy Savy is an avalanche observation and reporting app built with Airtable and React where the user can view previous avalanche reports and add a report themselves.   
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframes
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![desktop wireframe](https://i.imgur.com/tlQMDVv.jpg)
+![mobile wireframe](https://i.imgur.com/193LAXp.jpg)
 
-### `npm test`
+## Component Hierarchy
+![component hierarchy](https://i.imgur.com/VzYIcbI.jpg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API and Data Sample
 
-### `npm run build`
+Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```json
+{
+    "records": [
+        {
+            "id": "recGEbA9i7CZIUooP",
+            "fields": {
+                "type": "Avalanche",
+                "location": "Flagpole Peak",
+                "description": "Storm slab avalanche. 1ft crown. Human trigger. One person injured",
+                "date": "2/12/2021"
+            },
+            "createdTime": "2021-02-15T15:20:22.000Z"
+        },
+        {
+            "id": "recRV0eKzvoMmAEwe",
+            "fields": {
+                "type": "Avalanche",
+                "date": "2/12/2021",
+                "location": "Blue Lakes",
+                "description": "Storm slab avalanche. Triggered by skier. Skier was swept over cliffs and care flighted to Reno with severe injuries. "
+            },
+            "createdTime": "2021-02-15T15:20:22.000Z"
+        },
+        {
+            "id": "rec67mRXj7FTvXUFi",
+            "fields": {
+                "type": "Observation",
+                "date": "2/13/2021",
+                "location": "Castle Peak",
+                "description": "A pit test revealed a persistent weak layer approximately 14\" deep. "
+            },
+            "createdTime": "2021-02-15T15:20:22.000Z"
+        }
+    ],
+    "offset": "rec67mRXj7FTvXUFi"
+}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+ 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### MVP 
 
-### `npm run eject`
+- Create an API using Airtable
+- Render data in a feed style with newest data displayed at the top of the page
+- Create a form component that allows users to add an observation
+- Create a clickable delete button to remove a post
+- Create an About component that explains the purpose of this site
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### PostMVP  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Incorporate Photos
+- Allow users to edit posts
+- secondary external API to add a current weather page
+- add an education page
+- embedded map for locations of each report 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Project Schedule
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+|  Day | Deliverable | Status
+|---|---| ---|
+|Feb 15| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Feb 16| Project Approval | Incomplete
+|Feb 17| Core Application Structure/ Componenet creation | Incomplete
+|Feb 18| Get / Post / Delete Data / CSS | Incomplete
+|Feb 19| Route and clickable links / MVP / CSS | Incomplete
+|Feb 22| Post MVP goals / CSS | Incomplete
+|Feb 23| Presentations | Incomplete
 
-## Learn More
+## Timeframes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Create API | H | 2hrs| hrs | hrs |
+| Initial React App setup | H | 3hrs| hrs | hrs |
+| Render Axios Data | H | 3hrs| hrs | hrs |
+| Post Data to Airtable | H | 2hrs| hrs | hrs |
+| Delete From Airtable | H | 3hrs| hrs | hrs |
+| Routes and path configuration | H | 3hrs| hrs | hrs |
+| Clickable Links | H | 3hrs| hrs | hrs |
+| CSS | H | 10hrs| hrs | hrs |
+| Debugging | H | 10hrs| hrs | hrs |
+| Media Query | H | 2hrs| hrs | hrs |
+| Total | H | 41hrs| hrs | hrs |
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

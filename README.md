@@ -18,7 +18,6 @@ Avy Savy is an avalanche observation and reporting app built with Airtable and R
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
 
 ```json
 {

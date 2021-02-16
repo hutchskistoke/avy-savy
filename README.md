@@ -15,7 +15,7 @@ Avy Savy is an avalanche observation and reporting app built with Airtable and R
 ![mobile wireframe](https://i.imgur.com/193LAXp.jpg) ![Mobile about page](https://i.imgur.com/eoiKCt1.jpg)
 
 ## Component Hierarchy
-![component hierarchy](https://i.imgur.com/VzYIcbI.jpg)]
+![component hierarchy](https://i.imgur.com/VzYIcbI.jpg)
 
 ## API and Data Sample
 
@@ -82,7 +82,7 @@ Avy Savy is an avalanche observation and reporting app built with Airtable and R
 |---|---| ---|
 |Feb 15| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |Feb 16| Project Approval | Incomplete
-|Feb 17| Core Application Structure/ Componenet creation | Incomplete
+|Feb 17| Core Application Structure/ Componenet creation / CSS | Incomplete
 |Feb 18| Get / Post / Delete Data / CSS | Incomplete
 |Feb 19| Route and clickable links / MVP / CSS | Incomplete
 |Feb 22| Post MVP goals / CSS | Incomplete
@@ -114,7 +114,7 @@ I am confident with API calls.
 
 ### Weaknesses:
 
-CSS continues to be a weakness for me. I anticipate this to be timeconsuming which is why I've added it to nearly every day in my project schedule. 
+CSS continues to be a weakness for me. I anticipate this to be timeconsuming which is why I've added it as a to-do nearly every day in my project schedule. 
 
 ### Opportunities:
 

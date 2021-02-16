@@ -12,10 +12,10 @@ Avy Savy is an avalanche observation and reporting app built with Airtable and R
 
 ![desktop wireframe](https://i.imgur.com/tlQMDVv.jpg)
 ![desktop about page](https://i.imgur.com/tXrBdi8.jpg)
-![mobile wireframe](https://i.imgur.com/193LAXp.jpg)
+![mobile wireframe](https://i.imgur.com/193LAXp.jpg) ![Mobile about page](https://i.imgur.com/eoiKCt1.jpg)
 
 ## Component Hierarchy
-![component hierarchy](https://i.imgur.com/VzYIcbI.jpg)
+![component hierarchy](https://i.imgur.com/VzYIcbI.jpg)]
 
 ## API and Data Sample
 

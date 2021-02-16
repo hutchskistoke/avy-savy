@@ -104,3 +104,21 @@ Avy Savy is an avalanche observation and reporting app built with Airtable and R
 | Media Query | H | 2hrs| hrs | hrs |
 | Total | H | 41hrs| hrs | hrs |
 
+
+## SWOT Analysis
+
+### Strengths: 
+
+I am confident with API calls.
+
+### Weaknesses:
+
+CSS continues to be a weakness for me. I anticipate this to be timeconsuming which is why I've added it to nearly every day in my project schedule. 
+
+### Opportunities:
+
+I am taking this as an opportunity to put the skills we have learned in class towards something I am passionate about. Avalanche safety is something I take very seriously and it's really cool to be able to build something from stratch that is dedicated to avalanche awareness and safety. 
+
+### Threats:
+
+I anticipate many hiccups along the way but we've been given an incredible amount of resources to tackle these over the past 5 weeks, so I am going to focus on self sufficient debugging and problem solving instead of immediately asking for help. 

@@ -14,6 +14,18 @@ function Form(props) {
   const history = useHistory()
   // const params = useParams()
 
+  // useEffect(() => {
+  //   if (props.reports.length > 0 && useParams.id) {
+  //     const hasReport = props.reports.find((report) => report.id === params.id)
+  //   }
+  //   if (hasReport) {
+  //     setLocation(hasReport.fields.location)
+  //     setType(props.fields.type)
+  //     setDate(props.fields.date)
+  //     setReport(props.fields.report)
+  //   }
+  // }, [props.reports, params.id])
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     const fields = {

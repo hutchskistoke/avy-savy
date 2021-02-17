@@ -27,10 +27,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>slip slidin' away</h1>
       <Nav />
       <Route exact path="/">
-        <div>
+        <div className="each-report">
           {reports.map((report) => (
             <Home
               key={reports.id}
@@ -42,6 +41,13 @@ function App() {
       </Route>
       <Route path="/new">
         <Form
+          reports={reports}
+          setToggleFetch={setToggleFetch}
+        />
+      </Route>
+      <Route path="/edit/:id">
+        <Form
+          key={reports.id}
           reports={reports}
           setToggleFetch={setToggleFetch}
         />

@@ -1,5 +1,28 @@
 
+.header-container {
+  display: flex;
+  /* flex-flow: column; */
+  font-family: 'Padauk', sans-serif;
+  border: 1px solid orange;
+}
+
+.name {
+  align-items: left;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid purple;
+}
+
+.links-container {
+  display: flex;
+  justify-content: right;
+  align-self: flex-end;
+  border: 1px solid blue;
+}
+
 .nav-links {
+  align-self: flex-end;
+  justify-content: end;
   border: 1px solid black;
   margin: 10px;
 }

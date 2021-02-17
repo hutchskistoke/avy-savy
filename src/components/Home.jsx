@@ -1,5 +1,7 @@
 import axios from "axios";
 import { baseURL, config } from "../services"
+import { Link } from "react-router-dom"
+import '../CSS/Home.css';
 
 function Home(props) {
   // console.log("Homepage props: ", props)
@@ -18,7 +20,13 @@ function Home(props) {
       <p>({type})</p>
       <h5>{date}</h5>
       <p>{report}</p>
-      <button onClick = {remove}>Delete Post</button>
+      <button
+        className="delete-button"
+        onClick={remove}>Delete Post</button>
+      <Link to={`/edit/${props.report.id}`}>
+        <button
+        className="edit-button">Edit Report</button>
+      </Link>
     </div>
   )
 }

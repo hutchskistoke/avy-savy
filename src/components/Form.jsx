@@ -12,19 +12,19 @@ function Form(props) {
   const [date, setDate] = useState("")
   const [report, setReport] = useState("")
   const history = useHistory()
-  // const params = useParams()
+  const params = useParams()
 
-  // useEffect(() => {
-  //   if (props.reports.length > 0 && useParams.id) {
-  //     const hasReport = props.reports.find((report) => report.id === params.id)
-  //   }
-  //   if (hasReport) {
-  //     setLocation(hasReport.fields.location)
-  //     setType(props.fields.type)
-  //     setDate(props.fields.date)
-  //     setReport(props.fields.report)
-  //   }
-  // }, [props.reports, params.id])
+  useEffect(() => {
+    if (props.reports.length > 0 && params.id) {
+      const hasReport = props.reports.find((report) => report.id === params.id)
+      if (hasReport) {
+        setLocation(hasReport.fields.location)
+        setType(hasReport.fields.type)
+        setDate(hasReport.fields.date)
+        setReport(hasReport.fields.report)
+      }
+    }
+  }, [props.reports, params.id])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -34,8 +34,12 @@ function Form(props) {
       date,
       report
     }
-    console.log("fields: ", fields)
-    await axios.post(baseURL, { fields }, config)
+    if (params.id) {
+      const update = `${baseURL}/${params.id}`
+      await axios.put(update, { fields }, config)
+    } else {
+      await axios.post(baseURL, { fields }, config)
+    }
     props.setToggleFetch((current) => !current)
     history.push("/")
   }
@@ -49,12 +53,12 @@ function Form(props) {
         value={location}
       />
       <br />
-      <label>Change to dropdown? </label>
-      <input
-        onChange={(e) => setType(e.target.value)}
-        name="type"
-        value={type}
-      />
+        <label>Select Type: </label>
+        <input
+          onChange={(e) => setType(e.target.value)}
+          name="type"
+          value={type}
+        />
       <br />
       <label>Date...add calendar thingy? </label>
       <input

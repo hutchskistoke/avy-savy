@@ -3,6 +3,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { useHistory, useParams } from "react-router-dom"
 import { baseURL, config } from "../services"
+import "../CSS/Form.css"
 
 function Form(props) {
   console.log("form page props: ", props)
@@ -11,6 +12,7 @@ function Form(props) {
   const [type, setType] = useState("")
   const [date, setDate] = useState("")
   const [report, setReport] = useState("")
+  const [photo, setPhoto] = useState([])
   const history = useHistory()
   const params = useParams()
 
@@ -45,29 +47,29 @@ function Form(props) {
   }
 
   return (
-    <form onSubmit = {handleSubmit}>
-      <label>Location: </label>
+    <form className="form-container" onSubmit = {handleSubmit}>
+      <label className="location-input">Location: </label>
       <input
         onChange={(e) => setLocation(e.target.value)}
         name="location"
         value={location}
       />
       <br />
-        <label>Select Type: </label>
+        <label className="type-input">Select Type: </label>
         <input
           onChange={(e) => setType(e.target.value)}
           name="type"
           value={type}
         />
       <br />
-      <label>Date...add calendar thingy? </label>
+      <label className="date-input">Date...add calendar thingy? </label>
       <input
         onChange={(e) => setDate(e.target.value)}
         name="date"
         value={date}
       />
       <br />
-      <label>Report: </label>
+      <label className="report-input">Report: </label>
       <input
         onChange={(e) => setReport(e.target.value)}
         type= "text area"
@@ -75,7 +77,17 @@ function Form(props) {
         value={report}
       />
       <br />
-      <button type="submit">3, 2, 1... dropping!</button>
+      <label className="photo-input">Photo: </label>
+      <input
+        onChange={(e) => setPhoto(e.target.value)}
+        name="photo"
+        value={photo}
+      />
+      <p className="pic-note">Note: photo upload accept a URL only! (ex: imgur)</p>
+      <br />
+      <button
+        type="submit"
+        className="submit-button">3, 2, 1... dropping!</button>
     </form>
   )
 }

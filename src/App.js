@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <Nav />
       <Route exact path="/">
-        <div className="each-report">
+        <div className="reports-container">
           {reports.map((report) => (
             <Home
               key={reports.id}

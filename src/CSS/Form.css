@@ -1,0 +1,11 @@
+
+.location-input,
+.type-input,
+.date-input,
+.report-input {
+  border: 2px solid blue;
+}
+
+.pic-note {
+  font-size: .5em;;
+}

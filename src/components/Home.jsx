@@ -12,20 +12,21 @@ function Home(props) {
     props.setToggleFetch((current) => !current)
   }
  
-  const {date, location, report, type} = props.report.fields
+  const {date, location, report, type, photo} = props.report.fields
   return (
     <div className="home-parent">
       {/* <h2>THIS IS THE HOME PAGE</h2> */}
-      <h4>{location}</h4>
-      <p>({type})</p>
-      <h5>{date}</h5>
-      <p>{report}</p>
+      <h4 className="loc">{location}</h4>
+      <p className="type">({type})</p>
+      <h5 className="date">{date}</h5>
+      <p className="report">{report}</p>
+      {photo ? <img className="pic" src={photo} alt="avalanche"></img> : null}
       <button
         className="delete-button"
         onClick={remove}>Delete Post</button>
-      <Link to={`/edit/${props.report.id}`}>
-        <button
-        className="edit-button">Edit Report</button>
+      <Link to={`/edit/${props.report.id}`}
+        className="edit-button">
+        <button>Edit Report</button>
       </Link>
     </div>
   )

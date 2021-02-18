@@ -1,10 +1,15 @@
 
 .home-parent {
-  display:grid;
+  /* display:grid; */
   border: 3px solid teal;
+  font-family: 'Padauk', sans-serif;
 }
 
 .delete-button,
 .edit-button {
   margin: 5px;
+}
+
+.pic {
+  max-width: 400px;
 }

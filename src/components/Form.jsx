@@ -12,7 +12,7 @@ function Form(props) {
   const [type, setType] = useState("")
   const [date, setDate] = useState("")
   const [report, setReport] = useState("")
-  const [photo, setPhoto] = useState([])
+  const [photo, setPhoto] = useState("")
   const history = useHistory()
   const params = useParams()
 
@@ -24,6 +24,7 @@ function Form(props) {
         setType(hasReport.fields.type)
         setDate(hasReport.fields.date)
         setReport(hasReport.fields.report)
+        setPhoto(hasReport.fields.photo)
       }
     }
   }, [props.reports, params.id])
@@ -34,7 +35,8 @@ function Form(props) {
       location,
       type,
       date,
-      report
+      report,
+      photo,
     }
     if (params.id) {
       const update = `${baseURL}/${params.id}`
@@ -79,11 +81,14 @@ function Form(props) {
       <br />
       <label className="photo-input">Photo: </label>
       <input
+        type="url"
         onChange={(e) => setPhoto(e.target.value)}
         name="photo"
         value={photo}
       />
-      <p className="pic-note">Note: photo upload accept a URL only! (ex: imgur)</p>
+      <br />
+      <p className="pic-note">Note: photo upload accepts a URL only!</p>
+      <a href="https://www.imgur.com" target="_blank" className="pic-note">(try imgur.com!)</a>
       <br />
       <button
         type="submit"

@@ -32,7 +32,7 @@ function App() {
         <div className="reports-container">
           {reports.map((report) => (
             <Home
-              key={reports.id}
+              key={report.id}
               report={report}
               setToggleFetch = {setToggleFetch}
             />

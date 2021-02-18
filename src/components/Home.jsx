@@ -12,7 +12,7 @@ function Home(props) {
     props.setToggleFetch((current) => !current)
   }
  
-  const {date, location, report, type, photo} = props.report.fields
+  const {date, location, report, type, photo,} = props.report.fields
   return (
     <div className="home-parent">
       {/* <h2>THIS IS THE HOME PAGE</h2> */}
@@ -20,7 +20,8 @@ function Home(props) {
       <p className="type">({type})</p>
       <h5 className="date">{date}</h5>
       <p className="report">{report}</p>
-      {photo ? <img className="pic" src={photo} alt="avalanche"></img> : null}
+      <img className="pic" src={photo}></img>
+      <br />
       <button
         className="delete-button"
         onClick={remove}>Delete Post</button>
@@ -33,3 +34,5 @@ function Home(props) {
 }
 
 export default Home;
+
+// ? `${photo}` : null

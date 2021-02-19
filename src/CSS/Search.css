@@ -1,3 +1,36 @@
- .search-bar {
-   color: red;
- }
+.typeahead {
+  width: 175px;
+  position:relative;
+}
+
+.search-bar {
+  width: 175px;
+}
+
+.typeahead-results {
+  width: 175px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  max-height: 200px;
+  overflow-y:scroll;
+  background-color: white;
+}
+
+.typeahead-results a {
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid transparent;
+  color: red;
+  transition: all 0.2s ease-in-out;
+}
+
+.typeahead-results a:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+
+/* CSS help courtesy of Soliel */

@@ -1,12 +1,12 @@
-
 import { useState } from "react";
-
+import "../CSS/Search.css";
 
 function Search(props) {
+  const [location, setLocation] = useState("");
 
-  const [location, setLocation] = useState("")
-
-  const filteredLocations = props.reports.filter((report) => report.fields.location.toLowerCase().includes(location.toLowerCase()));
+  const filteredLocations = props.reports.filter((report) =>
+    report.fields.location.toLowerCase().includes(location.toLowerCase())
+  );
   console.log(filteredLocations);
 
   return (
@@ -17,13 +17,21 @@ function Search(props) {
         value={location}
         onChange={(e) => setLocation(e.target.value)}
       />
-      <div className="typeahead-results">
-        {location && filteredLocations.map((report) => (
-          <p key={report.id}>{report.fields.location}</p>
-        ))}
-      </div>
+      {location && (
+        <div className="typeahead-results">
+          {filteredLocations.map((report) => (
+            <a
+              onClick={() => setLocation("")}
+              href={`/#${report.id}`}
+              key={report.id}
+            >
+              {report.fields.location}
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
-};
+}
 
 export default Search;

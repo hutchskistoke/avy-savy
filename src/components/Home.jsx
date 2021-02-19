@@ -14,7 +14,7 @@ function Home(props) {
  
   const {date, location, report, type, photo,} = props.report.fields
   return (
-    <div className="home-parent">
+    <div className="home-parent" id={props.report.id}>
       <div className="loc">{location}</div>
       <div className="type">({type})</div>
       <div className="date">{date}</div>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import Search from "./Search"
 import '../CSS/Nav.css';
 
-function Nav() {
+function Nav(props) {
 
   return (
     <div className="header-container">
@@ -12,10 +12,8 @@ function Nav() {
         <Link to="/" className="nav-links">Home</Link>
         <Link to="/new" className="nav-links">Submit</Link>
         <Link to="/about" className="nav-links">About</Link>
-        <Link to="/search" className="nav-links"
-        // reports={reports}
-        >Search</Link>
-        {/* <Search report={report}/> */}
+        
+        <Search reports={props.reports}/>
       </div>
     </div>
   )

@@ -35,3 +35,21 @@
 .name {
   text-align: left;
 }
+
+
+/* media queries below */
+
+@media only screen and (max-width: 375px) {
+  .header-container {
+    display: flex;
+    /* background-color: violet; */
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

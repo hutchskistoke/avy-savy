@@ -85,3 +85,13 @@ a {
   height: 200px; 
   border-radius: 4px;
 }
+
+/* media queries below */
+
+@media only screen and (max-width: 375px) {
+  .home-parent {
+    display: flex;
+    /* background-color: violet; */
+    flex-wrap: wrap;
+  }
+}

@@ -29,8 +29,8 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
-      <Search reports={reports} />
+      <Nav reports={reports}/>
+
       <Route exact path="/">
         <div className="reports-container">
           {reports.map((report) => (
@@ -54,6 +54,9 @@ function App() {
           reports={reports}
           setToggleFetch={setToggleFetch}
         />
+      </Route>
+      <Route path="/about">
+        <About />
       </Route>
       <Route>
         <Footer />

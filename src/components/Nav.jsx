@@ -6,7 +6,7 @@ function Nav(props) {
 
   return (
     <div className="header-container">
-      <img src="http://clipart-library.com/images_k/snowflake-png-transparent/snowflake-png-transparent-14.png" alt="snowflake" className="header-img"></img>
+      <img src="https://i.imgur.com/uMWHlHj.png" alt="snowflake" className="header-img"></img>
       <h1 className="name">avysavvy</h1>
       <div className="links-container">
         <Link to="/" className="nav-links">Home</Link>

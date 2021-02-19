@@ -2,7 +2,8 @@
 
 ## Project Name
 
-Avy Savy
+Avysavvy
+https://affectionate-euclid-867c96.netlify.app/
 
 ## Project Description
 
@@ -93,16 +94,16 @@ Avy Savy is an avalanche observation and reporting app built with Airtable and R
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create API | H | 2hrs| hrs | hrs |
-| Initial React App setup | H | 3hrs| hrs | hrs |
-| Render Axios Data | H | 3hrs| hrs | hrs |
-| Post Data to Airtable | H | 2hrs| hrs | hrs |
-| Delete From Airtable | H | 3hrs| hrs | hrs |
-| Routes and path configuration | H | 3hrs| hrs | hrs |
-| Clickable Links | H | 3hrs| hrs | hrs |
-| CSS | H | 10hrs| hrs | hrs |
-| Debugging | H | 10hrs| hrs | hrs |
-| Media Query | H | 2hrs| hrs | hrs |
+| Create API | H | 2hrs| 2hrs | hrs |
+| Initial React App setup | H | 3hrs| 4hrs | hrs |
+| Render Axios Data | H | 3hrs| 4hrs | hrs |
+| Post Data to Airtable | H | 2hrs| 2hrs | hrs |
+| Delete From Airtable | H | 3hrs| 1hrs | hrs |
+| Routes and path configuration | H | 3hrs| 4hrs | hrs |
+| Clickable Links | H | 3hrs| 2hrs | hrs |
+| CSS | H | 10hrs| 7hrs | hrs |
+| Debugging | H | 10hrs| 4hrs | hrs |
+| Media Query | H | 2hrs| 1hrs | hrs |
 | Total | H | 41hrs| hrs | hrs |
 
 

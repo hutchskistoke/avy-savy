@@ -39,7 +39,7 @@ function Form(props) {
       photo,
     }
     if (params.id) {
-      const update = `${baseURL}/${params.id}`
+      const update = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/avalanches/${params.id}`
       await axios.put(update, { fields }, config)
     } else {
       await axios.post(baseURL, { fields }, config)

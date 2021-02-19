@@ -7,7 +7,7 @@ function Home(props) {
   // console.log("Homepage props: ", props)
 
   const remove = async () => {
-    const toBeDeleted = `${baseURL}/${props.report.id}`
+    const toBeDeleted = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/avalanches/${props.report.id}`
     await axios.delete(toBeDeleted, config)
     props.setToggleFetch((current) => !current)
   }

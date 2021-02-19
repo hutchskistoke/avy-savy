@@ -1,13 +1,13 @@
 import axios from "axios";
-import { baseURL, config } from "../services"
+import { queryURL, baseURL, config } from "../services"
 import { Link } from "react-router-dom"
-import '../CSS/Home.css';
+import '../CSS/Report.css';
 
-function Home(props) {
+function Report(props) {
   // console.log("Homepage props: ", props)
 
   const remove = async () => {
-    const toBeDeleted = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/avalanches/${props.report.id}`
+    const toBeDeleted = `${queryURL}/${props.report.id}`
     await axios.delete(toBeDeleted, config)
     props.setToggleFetch((current) => !current)
   }
@@ -19,7 +19,7 @@ function Home(props) {
       <div className="type">({type})</div>
       <div className="date">{date}</div>
       <div className="report">{report}</div>
-      <img className="pic" src={photo}/>
+      <img className="pic" src={photo} alt={location}/>
       <button
         className="delete-button"
         onClick={remove}>Delete Post</button>
@@ -30,4 +30,4 @@ function Home(props) {
   )
 }
 
-export default Home;
+export default Report;

@@ -1,13 +1,12 @@
 
-import './CSS/App.css';
+import './App.css';
 import { Link, Route } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { baseURL, config } from "./services"
-import Home from "./components/Home"
+import Report from "./components/Report"
 import Nav from "./components/Nav"
 import Form from "./components/Form"
 import About from "./components/About"
-import Search from "./components/Search"
 import Footer from "./components/Footer"
 import axios from 'axios';
 
@@ -34,7 +33,7 @@ function App() {
       <Route exact path="/">
         <div className="reports-container">
           {reports.map((report) => (
-            <Home
+            <Report
               key={report.id}
               report={report}
               setToggleFetch = {setToggleFetch}

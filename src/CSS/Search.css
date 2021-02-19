@@ -4,11 +4,11 @@
 }
 
 .search-bar {
-  width: 175px;
+  width: 155px;
 }
 
 .typeahead-results {
-  width: 175px;
+  width: 165px;
   box-sizing: border-box;
   border: 1px solid black;
   position: absolute;

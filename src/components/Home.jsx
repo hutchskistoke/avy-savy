@@ -15,24 +15,19 @@ function Home(props) {
   const {date, location, report, type, photo,} = props.report.fields
   return (
     <div className="home-parent">
-      {/* <h2>THIS IS THE HOME PAGE</h2> */}
-      <h4 className="loc">{location}</h4>
-      <p className="type">({type})</p>
-      <h5 className="date">{date}</h5>
-      <p className="report">{report}</p>
-      <img className="pic" src={photo}></img>
-      <br />
+      <div className="loc">{location}</div>
+      <div className="type">({type})</div>
+      <div className="date">{date}</div>
+      <div className="report">{report}</div>
+      <img className="pic" src={photo}/>
       <button
         className="delete-button"
         onClick={remove}>Delete Post</button>
       <Link to={`/edit/${props.report.id}`}
-        className="edit-button">
-        <button>Edit Report</button>
+        ><div className="edit-button">Edit Report</div>
       </Link>
     </div>
   )
 }
 
 export default Home;
-
-// ? `${photo}` : null

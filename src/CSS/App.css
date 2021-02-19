@@ -2,8 +2,6 @@
 
 .App {
   text-align: center;
+  margin: 20px;
 }
 
-.each-report {
-  border:2px solid black;
-}

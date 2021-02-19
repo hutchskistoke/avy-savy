@@ -7,6 +7,8 @@ import Home from "./components/Home"
 import Nav from "./components/Nav"
 import Form from "./components/Form"
 import About from "./components/About"
+import Search from "./components/Search"
+import Footer from "./components/Footer"
 import axios from 'axios';
 
 
@@ -28,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
+      <Search reports={reports} />
       <Route exact path="/">
         <div className="reports-container">
           {reports.map((report) => (
@@ -51,6 +54,9 @@ function App() {
           reports={reports}
           setToggleFetch={setToggleFetch}
         />
+      </Route>
+      <Route>
+        <Footer />
       </Route>
     </div>
   );

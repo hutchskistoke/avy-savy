@@ -1,11 +1,11 @@
 
 .header-container {
   display: grid;
-  grid-template-columns: 100px 300px auto 200px;
-  grid-template-rows: 74.5px;
+  grid-template-columns: 100px 300px auto 300px;
+  grid-template-rows: 100px;
   font-family: 'Padauk', sans-serif;
-  /* border: 1px solid orange; */
-  background-color: rgb(203, 223, 239);
+  margin-bottom: 10px;;
+
 }
 
 .header-img{
@@ -17,13 +17,13 @@
   font-size: 3em;
   grid-column: 2/3;
   margin: 10px;
-  /* border: 1px solid purple; */
+
 }
 
 .links-container {
   grid-column: 4/5;
   align-self: flex-end;
-  /* border: 1px solid blue; */
+
 }
 
 .nav-links {
@@ -31,6 +31,7 @@
   padding:5px;
 }
 
+
 .name {
-  text-align: left;;
+  text-align: left;
 }

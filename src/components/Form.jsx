@@ -49,47 +49,48 @@ function Form(props) {
   }
 
   return (
-    <form className="form-container" onSubmit = {handleSubmit}>
-      <label className="location-input">Location: </label>
-      <input
+    <form className="form-container" onSubmit={handleSubmit}>
+      <div className="title">Submit</div>
+      <label className="location-title">Location: </label>
+      <input className="location-input"
         onChange={(e) => setLocation(e.target.value)}
         name="location"
         value={location}
       />
-      <br />
-        <label className="type-input">Select Type: </label>
-        <input
+      {/* <br /> */}
+        <label className="type-title">Select Type: </label>
+        <input className="type-input"
           onChange={(e) => setType(e.target.value)}
           name="type"
           value={type}
         />
-      <br />
-      <label className="date-input">Date...add calendar thingy? </label>
-      <input
+      {/* <br /> */}
+      <label className="date-title">Date...add calendar thingy? </label>
+      <input className="date-input"
         onChange={(e) => setDate(e.target.value)}
         name="date"
         value={date}
       />
-      <br />
-      <label className="report-input">Report: </label>
-      <input
+      {/* <br /> */}
+      <label className="report-title">Report: </label>
+      <input className="report-input"
         onChange={(e) => setReport(e.target.value)}
         type= "text area"
         name="report"
         value={report}
       />
-      <br />
-      <label className="photo-input">Photo: </label>
-      <input
+      {/* <br /> */}
+      <label className="photo-title">Photo: </label>
+      <input className="photo-input"
         type="url"
         onChange={(e) => setPhoto(e.target.value)}
         name="photo"
         value={photo}
       />
-      <br />
+      {/* <br /> */}
       <p className="pic-note">Note: photo upload accepts a URL only!</p>
-      <a href="https://www.imgur.com" target="_blank" className="pic-note">(try imgur.com!)</a>
-      <br />
+      <a href="https://www.imgur.com" target="_blank" className="pic-note">(try imgur!)</a>
+      {/* <br /> */}
       <button
         type="submit"
         className="submit-button">3, 2, 1... dropping!</button>

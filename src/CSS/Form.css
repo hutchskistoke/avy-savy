@@ -1,11 +1,66 @@
 
-.location-input,
-.type-input,
-.date-input,
+.pic-note {
+  font-size: .5em;
+}
+
+.form-container {
+  display: grid;
+  grid-template-areas: 
+  "S S S S S"
+  "ST ST SI SI SI"
+  "L L LI D DI"
+  "R R RI RI RI"
+  "R R RI RI RI"
+  "R R RI RI RI"
+  "P P PI PI PI"
+  "PN PN PN PN PN"
+  "SB SB SB SB SB"
+  ;
+}
+
+.title {
+  grid-area: S;
+}
+
+.type-title {
+  grid-area: ST;
+}
+.type-input {
+  grid-area: SI;
+}
+
+.location-title {
+  grid-area: L;
+}
+.location-input {
+  grid-area: LI;
+}
+
+.date-title {
+  grid-area: D;
+}
+.date-input {
+  grid-area: DI;
+}
+
+.report-title {
+  grid-area: R;
+}
 .report-input {
-  border: 2px solid blue;
+  grid-area: RI;
+}
+
+.photo-title {
+  grid-area: P;
+}
+.photo-input {
+  grid-area: PI;
 }
 
 .pic-note {
-  font-size: .5em;
+  grid-area: PN;
+}
+
+.submit-button {
+  grid-area: SB;
 }

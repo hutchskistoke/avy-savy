@@ -1,7 +1,7 @@
 
 .header-container {
   display: grid;
-  grid-template-columns: 100px 300px auto 300px;
+  grid-template-columns: 100px 300px auto 425px;
   grid-template-rows: 100px;
   font-family: 'Padauk', sans-serif;
   margin-bottom: 10px;;
@@ -21,6 +21,8 @@
 }
 
 .links-container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 25px 2fr;
   grid-column: 4/5;
   align-self: flex-end;
 
@@ -34,6 +36,11 @@
 
 .name {
   text-align: left;
+}
+
+.mag-icon {
+  height:22px;
+  justify-content: space-around;
 }
 
 

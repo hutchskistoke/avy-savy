@@ -12,7 +12,7 @@ function Nav(props) {
         <Link to="/" className="nav-links">Home</Link>
         <Link to="/new" className="nav-links">Submit</Link>
         <Link to="/about" className="nav-links">About</Link>
-        
+        <img src="https://i.imgur.com/GJpm9mL.png" alt="search magnifying glass" className="mag-icon"></img>
         <Search reports={props.reports}/>
       </div>
     </div>

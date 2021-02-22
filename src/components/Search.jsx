@@ -10,7 +10,7 @@ function Search(props) {
   console.log(filteredLocations);
 
   return (
-    <div className="typeahead">
+    <div className="typeahead" className="nav-links">
       <input
         className="search-bar"
         type="text"

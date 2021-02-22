@@ -10,15 +10,15 @@
 .form-container {
   display: grid;
   grid-template-areas: 
-  "S S S S S"
-  "ST ST SI SI SI"
-  "L L LI D DI"
-  "R R RI RI RI"
-  "R R RI RI RI"
-  "R R RI RI RI"
-  "P P PI PI PI"
-  "PN PN PN PN PN"
-  "SB SB SB SB SB"
+  "S S S S"
+  "ST SI SI SI"
+  "L LI D DI"
+  "R RI RI RI"
+  "R RI RI RI"
+  "R RI RI RI"
+  "P PI PI PI"
+  "PN PN PN PN"
+  "SB SB SB SB"
   ;
 }
 
@@ -29,25 +29,36 @@
 }
 
 .type-title {
+  display:flex;
+  justify-content: flex-end;
+  padding-right:30px;
   grid-area: ST;
 }
 .type-input {
   grid-area: SI;
   margin-right: 100px;
   margin-bottom: 20px;
-  max-width:200px;
+  max-width:300px;
+  height: 24px;
 }
 
 .location-title {
   grid-area: L;
+  display:flex;
+  justify-content: flex-end;
+  padding-right:30px;
 }
 .location-input {
   grid-area: LI;
   margin-bottom: 20px;
+  max-width: 300px;;
 }
 
 .date-title {
   grid-area: D;
+  display:flex;
+  justify-content: flex-end;
+  padding-right:30px;
 }
 .date-input {
   grid-area: DI;
@@ -57,6 +68,9 @@
 
 .report-title {
   grid-area: R;
+  display:flex;
+  justify-content: flex-end;
+  padding-right:30px;
 }
 .report-input {
   grid-area: RI;
@@ -67,6 +81,9 @@
 
 .photo-title {
   grid-area: P;
+  display:flex;
+  justify-content: flex-end;
+  padding-right:30px;
 }
 .photo-input {
   grid-area: PI;
@@ -81,4 +98,6 @@
   grid-area: SB;
   width: 170px;
   justify-self: center;
+  margin-bottom: 20px;
+  margin-top:10px;
 }

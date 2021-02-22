@@ -4,7 +4,7 @@
   grid-template-columns: 100px 300px auto 400px;
   grid-template-rows: 100px;
   font-family: 'Padauk', sans-serif;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   background-color: cadetblue;
 }
 
@@ -46,7 +46,7 @@
 
 .mag-icon {
   height:22px;
-  
+  margin-top:9px;
 }
 
 

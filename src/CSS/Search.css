@@ -5,6 +5,7 @@
 
 .search-bar {
   width: 155px;
+  background-color: #faf3dd;
 }
 
 .search-bar:focus {

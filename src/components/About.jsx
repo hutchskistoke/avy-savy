@@ -1,12 +1,27 @@
-import React from 'react';
+
+import React from "react";
+import "../CSS/About.css"
 
 function About() {
   return (
-    <div>
-      <h1>This is a static About and Education page...</h1>
-      <h3>Will fill with content over the weekend :)</h3>
+    <div className="about-container">
+      <h1 className="about-title">Why is it important to monitor snow conditions?</h1>
+      <div>Learning to read the snowpack can be the difference between life and death in the mountains. </div>
+      <div>Let's keep track of what it's trying to tell us! </div>
+      <div>Live to ski another day...</div>
+      <iframe
+        src="https://player.vimeo.com/video/144545554?color=ffffff"
+        width="640"
+        height="360"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+     
+
+      <div className=""></div>
     </div>
   );
-};
+}
 
 export default About;

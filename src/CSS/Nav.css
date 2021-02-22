@@ -18,6 +18,7 @@
   grid-column: 2/3;
   margin: 10px;
   color: rgb(12, 102, 129);
+  -webkit-text-stroke: 0.1pt black;
 
 }
 
@@ -38,6 +39,10 @@
 
 .nav-links:visited {
   color: #1d3557;
+}
+
+.nav-links:hover {
+  text-decoration: underline;
 }
 
 .name {

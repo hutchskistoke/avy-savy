@@ -7,6 +7,10 @@
   width: 155px;
 }
 
+.search-bar:focus {
+  outline-color: teal;
+}
+
 .typeahead-results {
   width: 165px;
   box-sizing: border-box;
@@ -24,7 +28,7 @@
   text-decoration: none;
   box-sizing: border-box;
   border-bottom: 1px solid transparent;
-  color: red;
+  color:teal;
   transition: all 0.2s ease-in-out;
 }
 

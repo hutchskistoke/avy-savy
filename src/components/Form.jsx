@@ -50,7 +50,7 @@ function Form(props) {
 
   return (
     <form className="form-container" onSubmit={handleSubmit}>
-      <div className="title">Submit</div>
+      <div className="title">Submit your own report</div>
       <label className="location-title">Location: </label>
       <input className="location-input"
         onChange={(e) => setLocation(e.target.value)}
@@ -58,24 +58,28 @@ function Form(props) {
         value={location}
       />
 
-        <label className="type-title">Select Type: </label>
-        <input className="type-input"
-          onChange={(e) => setType(e.target.value)}
+      <label className="type-title">Select Type: </label>
+      <select className="type-input"
           name="type"
-          value={type}
-        />
+          value={type}  
+          onChange={(e) => setType(e.target.value)} >
+        <option className="type-input" value="dropdown">Select Type: </option>
+        <option className="type-input" value="avalanche">Avalanche </option>
+        <option className="type-input" value="observation">Observation </option>
+        </select>
 
-      <label className="date-title">Date...add calendar thingy? </label>
+      <label className="date-title">Date: </label>
       <input className="date-input"
+        type="date"
         onChange={(e) => setDate(e.target.value)}
         name="date"
         value={date}
       />
 
       <label className="report-title">Report: </label>
-      <input className="report-input"
+      <textarea className="report-input"
         onChange={(e) => setReport(e.target.value)}
-        type= "text area"
+        type= "text"
         name="report"
         value={report}
       />
@@ -99,3 +103,6 @@ function Form(props) {
 }
 
 export default Form;
+
+
+// Drop down menu help from Dawit! (lines 61-69)

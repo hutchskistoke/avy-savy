@@ -20,6 +20,8 @@
 
 .title {
   grid-area: S;
+  margin-bottom: 20px;
+  font-size: 1.5em;
 }
 
 .type-title {
@@ -27,6 +29,9 @@
 }
 .type-input {
   grid-area: SI;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  max-width:200px;
 }
 
 .location-title {
@@ -34,6 +39,7 @@
 }
 .location-input {
   grid-area: LI;
+  margin-bottom: 20px;
 }
 
 .date-title {
@@ -41,6 +47,8 @@
 }
 .date-input {
   grid-area: DI;
+  margin-right: 100px;
+  margin-bottom: 20px;
 }
 
 .report-title {
@@ -48,6 +56,9 @@
 }
 .report-input {
   grid-area: RI;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  height: 80px;
 }
 
 .photo-title {
@@ -55,6 +66,7 @@
 }
 .photo-input {
   grid-area: PI;
+  margin-right: 100px;
 }
 
 .pic-note {
@@ -63,4 +75,6 @@
 
 .submit-button {
   grid-area: SB;
+  width: 170px;
+  justify-self: center;
 }

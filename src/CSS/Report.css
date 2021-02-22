@@ -8,20 +8,21 @@
   "E R R P P"
   "X R R P P";
   border-top: 3px solid teal;
-  border-left: 3px solid teal;
-  border-right: 3px solid teal;
   border-radius: 4px;
   justify-content: space-between;
+  background-color: #faf3dd;
 }
 
 .type {
   grid-area: T;
   padding-top: 10px;
+  font-style: italic;
 }
 
 .loc {
   grid-area: L;
   padding-top: 10px;
+  font-weight: bold;
 }
 
 .date {
@@ -91,7 +92,6 @@ a {
 @media only screen and (max-width: 375px) {
   .home-parent {
     display: flex;
-    /* background-color: violet; */
     flex-wrap: wrap;
   }
 }

@@ -4,8 +4,8 @@
   grid-template-columns: 100px 300px auto 400px;
   grid-template-rows: 100px;
   font-family: 'Padauk', sans-serif;
-  margin-bottom: 10px;;
-
+  margin-bottom: 10px;
+  background-color: cadetblue;
 }
 
 .header-img{

@@ -10,16 +10,13 @@ function About() {
       <div>Let's keep track of what it's trying to tell us! </div>
       <div>Live to ski another day...</div>
       <iframe
+        className="movie"
         src="https://player.vimeo.com/video/144545554?color=ffffff"
         width="640"
         height="360"
-        frameborder="0"
+        frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen
       ></iframe>
-     
-
-      <div className=""></div>
     </div>
   );
 }

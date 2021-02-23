@@ -83,10 +83,10 @@ Avy Savy is an avalanche observation and reporting app built with Airtable and R
 |---|---| ---|
 |Feb 15| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Feb 16| Project Approval | Complete
-|Feb 17| Core Application Structure/ Componenet creation / CSS | Incomplete
-|Feb 18| Get / Post / Delete Data / CSS | Incomplete
-|Feb 19| Route and clickable links / MVP / CSS | Incomplete
-|Feb 22| Post MVP goals / CSS | Incomplete
+|Feb 17| Core Application Structure/ Componenet creation / CSS | Complete
+|Feb 18| Get / Post / Delete Data / CSS | Complete
+|Feb 19| Route and clickable links / MVP / CSS | Complete
+|Feb 22| Post MVP goals / CSS | Complete
 |Feb 23| Presentations | Incomplete
 
 ## Timeframes
@@ -101,9 +101,9 @@ Avy Savy is an avalanche observation and reporting app built with Airtable and R
 | Delete From Airtable | H | 3hrs| 1hrs | hrs |
 | Routes and path configuration | H | 3hrs| 4hrs | hrs |
 | Clickable Links | H | 3hrs| 2hrs | hrs |
-| CSS | H | 10hrs| 7hrs | hrs |
-| Debugging | H | 10hrs| 4hrs | hrs |
-| Media Query | H | 2hrs| 1hrs | hrs |
+| CSS | H | 10hrs| 12hrs | hrs |
+| Debugging | H | 10hrs| 6hrs | hrs |
+| Media Query | H | 2hrs| 3hrs | hrs |
 | Total | H | 41hrs| hrs | hrs |
 
 

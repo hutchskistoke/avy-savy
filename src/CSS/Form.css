@@ -51,7 +51,6 @@
 .location-input {
   grid-area: LI;
   margin-bottom: 20px;
-  max-width: 300px;;
 }
 
 .date-title {
@@ -64,6 +63,7 @@
   grid-area: DI;
   margin-right: 100px;
   margin-bottom: 20px;
+  font-family: 'Padauk', sans-serif;
 }
 
 .report-title {
@@ -100,4 +100,77 @@
   justify-self: center;
   margin-bottom: 20px;
   margin-top:10px;
+}
+
+@media only screen and (max-width: 660px) {
+  .form-container {
+    display: grid;
+    grid-template-areas: 
+    "S S"
+    "ST SI"
+    "L LI"
+    "D DI"
+    "R R"
+    "RI RI"
+    "P PI"
+    "PN PN"
+    "SB SB"
+    ;
+  }
+  .title {
+    grid-area: S;
+  }
+  .type-title {
+    grid-area: ST;
+  }
+  .type-input {
+    grid-area: SI;
+  }
+  .location-title {
+    grid-area: L;
+  }
+  .location-input {
+    grid-area: LI;
+    /* width: 163px; */
+  }
+  .date-title {
+    grid-area: D;
+  }
+  .date-input {
+    grid-area: DI;
+  }
+  .report-title {
+    grid-area: R;
+    margin-right: 45%;
+    margin-bottom: 10px;
+  }
+  .report-input {
+    grid-area: RI;
+    max-width: 400px;
+    margin-left: 25%;
+  }
+  .photo-title {
+    grid-area: P;
+  }
+  .photo-input {
+    grid-area: PI;
+  }
+  .pic-note {
+    grid-area: PN;
+  }
+  .submit-button {
+    grid-area: SB;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .location-input {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .location-input{
+    max-width: 150px;
+  }
 }

@@ -6,7 +6,6 @@ import { queryURL, baseURL, config } from "../services"
 import "../CSS/Form.css"
 
 function Form(props) {
-  console.log("form page props: ", props)
   
   const [location, setLocation] = useState("")
   const [type, setType] = useState("")
@@ -105,4 +104,4 @@ function Form(props) {
 export default Form;
 
 
-// Drop down menu help from Dawit! (lines 61-69)
+// Drop down menu help from Dawit! (lines 60-68)

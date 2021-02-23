@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "../CSS/Report.css";
 
 function Report(props) {
-  // console.log("Homepage props: ", props)
 
   const remove = async () => {
     const toBeDeleted = `${queryURL}/${props.report.id}`;

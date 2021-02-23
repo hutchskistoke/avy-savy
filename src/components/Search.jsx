@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import "../CSS/Search.css";
 
@@ -7,10 +8,9 @@ function Search(props) {
   const filteredLocations = props.reports.filter((report) =>
     report.fields.location.toLowerCase().includes(location.toLowerCase())
   );
-  console.log(filteredLocations);
-
+  
   return (
-    <div className="typeahead" className="nav-links">
+    <div className="typeahead">
       <input
         className="search-bar"
         type="text"

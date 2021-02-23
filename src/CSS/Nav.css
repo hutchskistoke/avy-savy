@@ -18,8 +18,6 @@
   grid-column: 2/3;
   margin: 10px;
   color: rgb(12, 102, 129);
-  -webkit-text-stroke: 0.1pt black;
-
 }
 
 .links-container {
@@ -60,7 +58,6 @@
 @media only screen and (max-width: 375px) {
   .header-container {
     display: flex;
-    /* background-color: violet; */
     flex-wrap: wrap;
   }
 }

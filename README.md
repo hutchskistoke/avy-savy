@@ -94,17 +94,17 @@ Avy Savy is an avalanche observation and reporting app built with Airtable and R
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create API | H | 2hrs| 2hrs | hrs |
-| Initial React App setup | H | 3hrs| 4hrs | hrs |
-| Render Axios Data | H | 3hrs| 4hrs | hrs |
-| Post Data to Airtable | H | 2hrs| 2hrs | hrs |
-| Delete From Airtable | H | 3hrs| 1hrs | hrs |
-| Routes and path configuration | H | 3hrs| 4hrs | hrs |
-| Clickable Links | H | 3hrs| 2hrs | hrs |
-| CSS | H | 10hrs| 12hrs | hrs |
-| Debugging | H | 10hrs| 6hrs | hrs |
-| Media Query | H | 2hrs| 3hrs | hrs |
-| Total | H | 41hrs| hrs | hrs |
+| Create API | H | 2hrs| 2hrs | 2hrs |
+| Initial React App setup | H | 3hrs| 4hrs | 4hrs |
+| Render Axios Data | H | 3hrs| 4hrs | 4hrs |
+| Post Data to Airtable | H | 2hrs| 2hrs | 2hrs |
+| Delete From Airtable | H | 3hrs| 1hrs | 1hrs |
+| Routes and path configuration | H | 3hrs| 4hrs | 4hrs |
+| Clickable Links | H | 3hrs| 2hrs | 2hrs |
+| CSS | H | 10hrs| 12hrs | 12hrs |
+| Debugging | H | 10hrs| 6hrs | 6hrs |
+| Media Query | H | 2hrs| 3hrs | 3hrs |
+| Total | H | 41hrs| 40hrs | 40hrs |
 
 
 ## SWOT Analysis

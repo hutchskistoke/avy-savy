@@ -10,6 +10,7 @@
   border-top: 3px solid teal;
   justify-content: space-between;
   background-color: 	#FFFFF0;
+  padding-left: 200px;
 }
 
 .type {
@@ -90,8 +91,9 @@ a {
   grid-column: 4/6;
   grid-row:1/4;
   grid-row-end: 6;
-  max-width: 400px;
-  height: 200px; 
+  width: 300px;
+  height: 300px; 
+  object-fit: cover;
   border-radius: 4px;
 }
 

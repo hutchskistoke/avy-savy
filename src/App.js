@@ -19,7 +19,6 @@ function App() {
   useEffect(() => {
     const findReports = async () => {
       const response = await axios.get(baseURL, config)
-      console.log(response.data.records)
       setReports(response.data.records)
     }
     findReports()

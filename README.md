@@ -3,7 +3,7 @@
 ## Project Name
 
 Avysavvy
-https://affectionate-euclid-867c96.netlify.app/
+https://avy-savvy-snow.netlify.app
 
 ## Project Description
 
